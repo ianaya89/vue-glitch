@@ -21,9 +21,9 @@ $ yarn add vue-glitch
 // main.js
 
 import Vue from 'vue';
-import VueGlitch from 'vue-glitch';
+import Glitch from 'vue-glitch';
 
-Vue.component('glitch', VueGlitch);
+Vue.component('glitch', Glitch);
 ```
 
 ## Local Registration
@@ -31,12 +31,12 @@ Vue.component('glitch', VueGlitch);
 ```html
 <script>
   // Component.vue
-  import VueGlitch from 'vue-glitch';
+  import Glitch from 'vue-glitch';
 
   export default {
     name: 'Component',
 
-    components: { Glitch: VueGlitch }
+    components: { Glitch }
   };
 </script>
 ```

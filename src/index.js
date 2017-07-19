@@ -1,5 +1,5 @@
-import HelloWorld from './HelloWorld.vue'
+import Glitch from './Glitch.vue'
 
-export { HelloWorld }
+export { Glitch }
 
-export default HelloWorld
+export default Glitch
