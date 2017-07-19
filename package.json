@@ -3,10 +3,7 @@
   "version": "1.0.1",
   "description": "Vue.js component to apply glitch effect in any kind of text",
   "main": "dist/vue-glitch.min.js",
-  "author": {
-    "name": "Ignacio Anaya",
-    "email": "ignacio.anaya89@gmail.com"
-  },
+  "author": "Ignacio Anaya <ignacio.anaya89@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
@@ -43,5 +40,6 @@
   },
   "pre-commit": [
     "eslint"
-  ]
+  ],
+  "repository": "git@github.com:ianaya89/vue-glitch.git"
 }
