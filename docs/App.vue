@@ -4,9 +4,9 @@
       br
       small > Vue.js component to apply glitch effect in any kind of text.
 
-    glitch(text="I am glitched")
-    glitch(text="I am glitched with custom color", color="tomato")
-    glitch(text="I am glitched with custom background", background="steelblue")
+    glitch(text="Glitch")
+    glitch(text="Glitch with custom color", color="tomato")
+    glitch(text="Glitch with custom background", background="steelblue")
 
     div
       h3 ### Component Usage
@@ -64,9 +64,9 @@
 
     data () {
       return {
-        sourcecode1: '<glitch text="I am glitched"></glitch>',
-        sourcecode2: '<glitch text="I am glitched with custom color", color="tomato"></glitch>',
-        sourcecode3: '<glitch text="I am glitched with custom background", background="steelblue"></glitch>'
+        sourcecode1: '<glitch text="Glitch"></glitch>',
+        sourcecode2: '<glitch text="Glitch with custom color", color="tomato"></glitch>',
+        sourcecode3: '<glitch text="Glitch with custom background", background="steelblue"></glitch>'
       }
     }
   }

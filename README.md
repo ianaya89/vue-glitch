@@ -46,9 +46,9 @@ Vue.component('glitch', Glitch);
 ```html
 <template>
   <main>
-    <glitch text="I am glitched"></glitch>
-    <glitch text="I am glitched with custom color", color="tomato"></glitch>
-    <glitch text="I am glitched with custom background", background="steelblue"></glitch>
+    <glitch text="Glitched"></glitch>
+    <glitch text="Glitched with custom color", color="tomato"></glitch>
+    <glitch text="Glitched with custom background", background="steelblue"></glitch>
   </main>
 </template>
 ```
