@@ -54,11 +54,18 @@ Vue.component('glitch', Glitch);
 ```
 
 ## Component Properties
-|name|required|default|
+|name|required|default
 |:--|:--|:--|:--|
 |text|`true`|-|
 |color|`false`|`#fff`|
 |background|`false`|`#000`|
+
+| name | required | default |
+| :---: | :---: | :---: |
+| text | true |  |
+| color | false | #fff |
+| background | false | #000 |
+
 
 ## Styling
 > To apply custom styles you should care about `.glitch` and `.glitch-wrapper` classes.
