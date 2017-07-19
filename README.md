@@ -2,9 +2,10 @@
 
 > Vue.js directive to apply glitch effect in text elements
 
-<div style="text-align:center">
-  <img src="src/assets/vue.png" alt="vue" title="vue"/>
-</div>
+![glitch preview](src/assets/preview.gif)
+
+
+###
 
 ### Development Setup
 
