@@ -2,6 +2,9 @@
 
 > 👻 Vue.js component to apply glitch effect in any kind of text
 
+[ ![Codeship Status for ianaya89/vue-esc](https://app.codeship.com/projects/3738d4b0-082d-0135-8a91-66ea66f8c9cb/status?branch=master)](https://app.codeship.com/projects/214292)
+[![Coverage Status](https://coveralls.io/repos/github/ianaya89/vue-glitch/badge.svg)](https://coveralls.io/github/ianaya89/vue-glitch)
+
 ![glitch preview](src/assets/preview.gif)
 
 
