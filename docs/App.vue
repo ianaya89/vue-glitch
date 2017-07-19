@@ -49,7 +49,7 @@
         | &nbsp;classes.
 
     footer(style="color: #fff; margin-top: 50px;")
-      p You can find more information in &nbsp;
+      p You can find more information in&nbsp;
         a(href="https://github.com/ianaya89/vue-glitch") component repository.
       p ⌨️ with ❤️ by&nbsp;
         a(href="http://twitter.com/ianaya89", style="color: steelblue") ianaya89
