@@ -1,0 +1,76 @@
+<template lang="pug">
+  .glitch-wrapper
+    .glitch(:data-text="text", :style="{ color, background }") {{ text }}
+</template>
+
+<script>
+  export default {
+    name: 'Glitch',
+
+    props: {
+      text: { type: String, required: true },
+      color: { type: String, default: '#fff' },
+      background: { type: String, default: '#000' }
+    }
+  }
+</script>
+
+<style lang="less" scoped>
+  .glitch-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .glitch {
+    @offset1: 2px;
+    @offset2: -2px;
+    @highlight1: red;
+    @highlight2: spin(@highlight1, 180);
+
+    color: white;
+    position: relative;
+    display: inline-block;
+
+    &::before,
+    &::after  {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+    }
+
+    &::before {
+      left: @offset1;
+      text-shadow: -2px 0 @highlight1;
+      clip: rect(24px, 550px, 90px, 0);
+      animation: glitch-anim-2 3s infinite linear alternate-reverse;
+    }
+
+    &::after {
+      left: @offset2;
+      text-shadow: -2px 0 @highlight2;
+      clip: rect(85px, 550px, 140px, 0);
+      animation: glitch-anim 2.5s infinite linear alternate-reverse;
+    }
+  }
+
+  .glitch-frames (@n: 20, @index: 0) when (@index <= @n) {
+    @keyframeSel: percentage(@index/@n);
+    @rand1: unit(round(`Math.random()*150`),px);
+    @rand2: unit(round(`Math.random()*150`), px);
+
+    @{keyframeSel} {
+      clip: rect(@rand1, 9999px, @rand2, 0);
+    }
+
+    .glitch-frames(@n, (@index + 1));
+  }
+
+  @keyframes glitch-anim { .glitch-frames(24); }
+
+  @keyframes glitch-anim-2 { .glitch-frames(30,2); }
+</style>
