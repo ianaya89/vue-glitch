@@ -62,7 +62,7 @@ Vue.component('glitch', Glitch);
 | background | `false` | `#000` |
 
 
-## Styling
+## Component Styling
 > To apply custom styles you should care about `.glitch` and `.glitch-wrapper` classes.
 
 ```css
