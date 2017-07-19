@@ -1,6 +1,6 @@
 {
   "name": "vue-glitch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue.js component to apply glitch effect in any kind of text",
   "main": "dist/vue-glitch.min.js",
   "author": {

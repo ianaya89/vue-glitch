@@ -25,7 +25,7 @@
   .glitch {
     @offset1: 2px;
     @offset2: -2px;
-    @highlight1: red;
+    @highlight1: #49FC00;
     @highlight2: spin(@highlight1, 180);
 
     color: white;
