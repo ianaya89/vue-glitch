@@ -96,4 +96,5 @@ $ npm run build
 
 ---
 **This project was generated with [generator-vue-component](https://github.com/ianaya89/generator-vue-component)**
+
 **⌨️ with ❤️ by [@ianaya89](https://twitter.com/ianaya89)**
