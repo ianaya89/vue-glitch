@@ -54,17 +54,12 @@ Vue.component('glitch', Glitch);
 ```
 
 ## Component Properties
-|name|required|default
-|:--|:--|:--|:--|
-|text|`true`|-|
-|color|`false`|`#fff`|
-|background|`false`|`#000`|
 
 | name | required | default |
 | :---: | :---: | :---: |
-| text | true |  |
-| color | false | #fff |
-| background | false | #000 |
+| text | `true` |  |
+| color | `false` | `#fff` |
+| background | `false` | `#000` |
 
 
 ## Styling
