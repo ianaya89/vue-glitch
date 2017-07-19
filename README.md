@@ -5,7 +5,7 @@
 ![glitch preview](src/assets/preview.gif)
 
 
-### Install
+## Install
 
 ```bash
 $ npm i -S vue-glitch
@@ -15,7 +15,7 @@ $ npm i -S vue-glitch
 $ yarn add vue-glitch
 ```
 
-### Global Use
+## Global Registration
 
 ```javascript
 // main.js
@@ -23,39 +23,66 @@ $ yarn add vue-glitch
 import Vue from 'vue';
 import VueGlitch from 'vue-glitch';
 
-Vue.use(VueGlitch);
+Vue.component('glitch', VueGlitch);
 ```
+
+## Local Registration
 
 ```html
 <script>
   // Component.vue
+  import VueGlitch from 'vue-glitch';
 
   export default {
     name: 'Component',
 
-    data () {
-      return {
-        text: 'I am glitched!'
-      }
-    }
+    components: { Glitch: VueGlitch }
   };
 </script>
+```
 
+## Component Usage
+
+```html
 <template>
-  <div v-esc="escape"></div>
+  <main>
+    <glitch text="I am glitched"></glitch>
+    <glitch text="I am glitched with custom color", color="tomato"></glitch>
+    <glitch text="I am glitched with custom background", background="steelblue"></glitch>
+  </main>
 </template>
+```
 
+## Component Properties
+| name | required  | default |
+|:--|:--|:--|:--|
+| text | `true` | - |
+| color | `false`  | `#fff` |
+| background | `false`  | `#000` |
+
+## Styling
+> To apply custom styles you should care about `.glitch` and `.glitch-wrapper` classes.
+
+```css
+.glitch {
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.glitch-wrapper {
+  font-family: sans-serif;
+}
 ```
 
 
-### Local Use
-
-
-### Development Setup
+## Development Setup
 
 ```bash
 # install dependencies
-$ npm install
+$ npm i
+#or
+$ yarn
 
 # dev mode
 $ npm run dev
