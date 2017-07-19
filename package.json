@@ -1,7 +1,7 @@
 {
   "name": "vue-glitch",
   "version": "1.0.0",
-  "description": "Vue.js directive to apply glitch effect in text elements",
+  "description": "Vue.js component to apply glitch effect in any kind of text",
   "main": "dist/vue-glitch.min.js",
   "author": {
     "name": "Ignacio Anaya",

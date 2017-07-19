@@ -2,7 +2,7 @@
   main
     h1 # vue-glitch
       br
-      small > Vue.js component to apply glitch effect in HTML texts.
+      small > Vue.js component to apply glitch effect in any kind of text.
 
     glitch(text="I am glitched")
     glitch(text="I am glitched with custom color", color="tomato")
