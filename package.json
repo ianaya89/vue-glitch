@@ -3,20 +3,19 @@
   "version": "1.0.1",
   "description": "Vue.js component to apply glitch effect in any kind of text",
   "main": "dist/vue-glitch.min.js",
-  "author": {
-    "name": "Ignacio Anaya",
-    "email": "ignacio.anaya89@gmail.com"
-  },
+  "author": "Ignacio Anaya <ignacio.anaya89@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "build:docs": "cross-env NODE_ENV=docs webpack --progress --hide-modules",
     "start": "serve --single",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+     "test": "jest"
   },
   "devDependencies": {
     "babel-core": "^6.1.21",
+    "babel-jest": "^20.0.3",
     "babel-loader": "^6.1.0",
     "babel-preset-env": "^1.6.0",
     "cross-env": "^3.0.0",
@@ -30,6 +29,9 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "file-loader": "^0.9.0",
+    "jest": "^20.0.4",
+    "jest-vue-preprocessor": "^1.0.1",
+    "jsdom": "^11.1.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
     "node-sass": "^3.4.1",
@@ -37,11 +39,19 @@
     "sass-loader": "^3.1.1",
     "vue": "^2.4.0",
     "vue-loader": "^12.1.0",
+    "vue-server-renderer": "^2.4.1",
     "vue-template-compiler": "^2.3.3",
     "webpack": "^2.7.0",
     "webpack-dev-server": "^2.4.5"
   },
   "pre-commit": [
     "eslint"
-  ]
+  ],
+  "repository": "git@github.com:ianaya89/vue-glitch.git",
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
+    }
+  }
 }
