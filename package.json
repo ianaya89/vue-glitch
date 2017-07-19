@@ -10,7 +10,8 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "build:docs": "cross-env NODE_ENV=docs webpack --progress --hide-modules",
     "start": "serve --single",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+     "test": "jest"
   },
   "devDependencies": {
     "babel-core": "^6.1.21",
@@ -46,5 +47,11 @@
   "pre-commit": [
     "eslint"
   ],
-  "repository": "git@github.com:ianaya89/vue-glitch.git"
+  "repository": "git@github.com:ianaya89/vue-glitch.git",
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
+    }
+  }
 }
