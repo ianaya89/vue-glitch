@@ -1,0 +1,8 @@
+src
+test
+build
+docs
+test
+.babelrc
+.eslintignore
+.eslintrc
