@@ -54,11 +54,11 @@ Vue.component('glitch', VueGlitch);
 ```
 
 ## Component Properties
-| name | required  | default |
+|name|required|default|
 |:--|:--|:--|:--|
-| text | `true` | - |
-| color | `false`  | `#fff` |
-| background | `false`  | `#000` |
+|text|`true`|-|
+|color|`false`|`#fff`|
+|background|`false`|`#000`|
 
 ## Styling
 > To apply custom styles you should care about `.glitch` and `.glitch-wrapper` classes.
@@ -81,8 +81,6 @@ Vue.component('glitch', VueGlitch);
 ```bash
 # install dependencies
 $ npm i
-#or
-$ yarn
 
 # dev mode
 $ npm run dev
@@ -95,4 +93,5 @@ $ npm run build
 ```
 
 ---
-**This project was generated with [yeoman](http://yeoman.io/) and [generator-vue-component](https://github.com/ianaya89/generator-vue-component) :heart:**
+**This project was generated with [generator-vue-component](https://github.com/ianaya89/generator-vue-component)**
+**⌨️ with ❤️ by [@ianaya89](https://twitter.com/ianaya89)**
