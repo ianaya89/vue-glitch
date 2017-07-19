@@ -47,6 +47,10 @@
         | &nbsp;and&nbsp;
         code .glitch-wrapper
         | &nbsp;classes.
+
+    footer(style="color: #fff; margin-top: 50px;")
+      p ⌨️ with ❤️ by&nbsp;
+        a(href="http://twitter.com/ianaya89", style="color: steelblue") ianaya89
 </template>
 
 <script>
