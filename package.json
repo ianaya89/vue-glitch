@@ -9,9 +9,11 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "build:docs": "cross-env NODE_ENV=docs webpack --progress --hide-modules",
-    "start": "serve --single",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --fix .js",
     "prepublish": "npm run build",
-     "test": "jest"
+    "start": "serve --single",
+    "test": "jest"
   },
   "devDependencies": {
     "babel-core": "^6.1.21",
@@ -45,7 +47,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "pre-commit": [
-    "eslint"
+    "lint"
   ],
   "engines": {
     "node": ">= 6"
