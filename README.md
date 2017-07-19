@@ -95,6 +95,6 @@ $ npm run build
 ```
 
 ---
-**This project was generated with [generator-vue-component](https://github.com/ianaya89/generator-vue-component)**
+*This project was generated with [generator-vue-component](https://github.com/ianaya89/generator-vue-component) and was inspired by [this](https://codepen.io/anatravas/pen/mOyNWR) Codepen by [@anatravas](https://codepen.io/anatravas/)*
 
 **⌨️ with ❤️ by [@ianaya89](https://twitter.com/ianaya89)**
